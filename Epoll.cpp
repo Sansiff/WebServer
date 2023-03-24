@@ -50,7 +50,7 @@ std::vector<Channel *> Epoll::poll(int timeout) {
 }
 
 void Epoll::updateChannel(Channel *channel) {
-  int fd = channel->getfd();
+  int fd = channel->getFd();
   struct epoll_event ev;
   bzero(&ev, sizeof(ev));
   ev.data.ptr = channel;
