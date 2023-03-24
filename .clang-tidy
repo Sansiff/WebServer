@@ -1,0 +1,33 @@
+---
+Checks:    "bugprone-*,\
+            cert-*,\
+            clang-analyzer-*,\
+            concurrency-*,\
+            google-*,\
+            llvm-*,\
+            misc-*,\
+            modernize-*,\
+            portability-*,\
+            performance-*,\
+            readability-*,\
+            -bugprone-easily-swappable-parameters,\
+            -bugprone-reserved-identifier,\
+            -cert-dcl51-cpp,\
+            -cert-dcl37-c,\
+            -readability-magic-numbers,\
+            -readability-identifier-length,\
+            -readability-implicit-bool-conversion,\
+            -readability-isolate-declaration,\
+            -readability-static-accessed-through-instance,\
+            -readability-redundant-access-specifiers,\
+            -google-build-using-namespace,\
+            -google-readability-casting,\
+            -google-readability-todo,\
+            -modernize-avoid-c-arrays,\
+            -modernize-use-trailing-return-type,\
+            -misc-non-private-member-variables-in-classes"
+WarningsAsErrors:   '-*'
+HeaderFilterRegex: '^.*\.h(|p{2})$'
+FormatStyle: file
+AnalyzeTemporaryDtors: false
+# check https://clang.llvm.org/extra/clang-tidy/checks/readability/identifier-naming.html
