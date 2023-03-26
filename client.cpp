@@ -3,7 +3,7 @@
 #include <arpa/inet.h>
 #include <string.h>
 #include <unistd.h>
-#include "util.h"
+#include "src/util.h"
 
 const int BUFFER_SIZE = 1024;
 
